@@ -14,10 +14,6 @@ export default defineConfig({
       rollupTypes: true,
       outDir: "dist/types",
       include: ["src/**/*.ts", "src/components/**/*.vue"],
-      // Do not show type errors in terminal log
-      logLevel: "silent",
-      // Fix api-extractor having trouble with Vue types
-      staticImport: true,
       tsconfigPath: "./tsconfig.app.json",
     }),
   ],
