@@ -1,6 +1,8 @@
-import './assets/main.css'
+import type { Plugin } from "vue";
 
-import { createApp } from 'vue'
-import App from './App.vue'
+// Export all components from the components directory to be able to import them separately inside another project.
+export * from "./components";
 
-createApp(App).mount('#app')
+export const TestLib: Plugin = {
+  install() {},
+};
